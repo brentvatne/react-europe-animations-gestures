@@ -52,7 +52,9 @@ class TapHandlerExamples extends React.Component {
           numberOfTaps={1}
           onHandlerStateChange={this._handleTapStateChange}
           shouldCancelWhenOutside>
-          <Animated.View style={[styles.button, { opacity: tapValue }]}>
+          <Animated.View
+            // hitSlop={{ top: 50, left: 100, right: 100 }}
+            style={[styles.button, { opacity: tapValue }]}>
             <Text>Tap</Text>
           </Animated.View>
         </TapGestureHandler>
@@ -86,7 +88,9 @@ class TapHandlerExamples extends React.Component {
           </LongPressGestureHandler>
         </TapGestureHandler> */}
 
-        <RectButton style={styles.button} onPress={() => alert('press')}>
+        <RectButton
+          // disallowInterruption
+          style={styles.button} onPress={() => alert('press')}>
           <Text>RectButton</Text>
         </RectButton>
 
