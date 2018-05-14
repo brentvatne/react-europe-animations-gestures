@@ -1,4 +1,5 @@
 import Basic from './Basic';
+import Props from './Props';
 import Visualize from './Visualize';
 import Composing from './Composing';
 import Tracking from './Tracking';
@@ -9,4 +10,4 @@ import GestureCompletion from './GestureCompletion';
 import GestureComposition from './GestureComposition';
 import GestureModal from './GestureModal';
 
-export default Basic;
+export default Props;
